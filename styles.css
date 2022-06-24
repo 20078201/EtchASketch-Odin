@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: auto;
+    background: wheat;
+}
+
+.containerGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 24px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+.box-hover {
+    background: yellow;
+}
