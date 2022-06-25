@@ -20,14 +20,11 @@
 
 .box {
     border: 1px solid black;
-    border-radius: 3px;
-    font-size: 24px;
-    text-align: center;
+    background: white;
     width: 200px;
     height: 200px;
-    margin: 10px;
 }
 
 .box-hover {
-    background: yellow;
+    background: black;
 }
