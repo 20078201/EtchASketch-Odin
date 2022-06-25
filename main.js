@@ -4,7 +4,7 @@
 
 
 function createGrid(size, element) {
-    for (let i = 0; i < size; i++) {
+    for (let i = 0; i < size*size; i++) {
         let div = document.createElement("div")
         div.classList.add("box")
         div.addEventListener('mouseover', () => {
@@ -34,11 +34,12 @@ const createGridBtn = document.createElement('button')
 createGridBtn.textContent = 'Customize grid size'
 createGridBtn.addEventListener('click', () => {
     grid_size = prompt('Enter a number to create your grid (1 - 100)', '1')
+    containerGrid.setAttribute('style', `grid-template-columns: repeat(${grid_size}, 1fr);`)
     removeGrid()
     createGrid(grid_size, containerGrid)
 })
 
-document.body.append(createGridBtn)
-createGrid(16, containerGrid)
+container.append(createGridBtn)
+createGrid(4, containerGrid)
 
 
